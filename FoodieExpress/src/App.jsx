@@ -1,10 +1,12 @@
 import './App.css'
+import Navbar from "./components/Navbar/Navbar.jsx";
+
 
 function App() {
-
+  
   return (
     <>
-      <h1>Welcome to Foodie Express</h1>
+      <Navbar />
     </>
   )
 }
