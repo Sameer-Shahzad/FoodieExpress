@@ -16,10 +16,10 @@ const Navbar = () => {
     <div className="flex items-center justify-around py-8">
       <img src={logo} alt="search" />
       <ul className="flex gap-10 cursor-pointer">
-        <li onMouseEnter={() => styleLists("Home")} onClick={() => styleLists("Home")} className={`${list === "Home" ? 'styling' : ''} transition`}>Home</li>
-        <li onMouseEnter={() => styleLists("Menu")} onClick={() => styleLists("Menu")} className={`${list === "Menu" ? 'styling' : ''} transition`}>Menu</li>
-        <li onMouseEnter={() => styleLists("Mobile-App")} onClick={() => styleLists("Mobile-App")} className={`${list === "Mobile-App" ? 'styling' : ''} transition`}>Mobile App</li>
-        <li onMouseEnter={() => styleLists("Contact")} onClick={() => styleLists("Contact")} className={`${list === "Contact" ? 'styling' : ''} transition`}>Contact us</li>
+        <li onClick={() => styleLists("Home")} className={`${list === "Home" ? 'styling' : ''} transition`}>Home</li>
+        <li onClick={() => styleLists("Menu")} className={`${list === "Menu" ? 'styling' : ''} transition`}>Menu</li>
+        <li onClick={() => styleLists("Mobile-App")} className={`${list === "Mobile-App" ? 'styling' : ''} transition`}>Mobile App</li>
+        <li onClick={() => styleLists("Contact")} className={`${list === "Contact" ? 'styling' : ''} transition`}>Contact us</li>
       </ul>
       <div className="flex gap-10 cursor-pointer items-center">
 
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img className="relative" src={basket_icon} alt="" />
           <div className="absolute dot"><img src={selectorIcon} alt="" /></div>
-          <button className="addMargin rounded-2xl  p-2 hover:bg-gray-200 transition">Sign in</button>
+          <button className="addMargin rounded-2xl p-2 hover:bg-orange-600 hover:text-white transition hover:border-orange-600">Sign in</button>
         </div>
       </div>
     </div>
