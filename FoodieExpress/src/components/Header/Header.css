@@ -1,7 +1,21 @@
 .header {
-    background-image: url('header_img.png') no repeat;
     height: 34vw;
     margin: 30px auto;
+    background: url('../../assets/header_img.png') no-repeat;
+    background-position: center;
     background-size: contain;
+    background-size: 83% 100%;
+    border-radius: 20px;
     position: relative;
+    
+}
+
+.secDiv {
+    animation: fade 3s;
+    width: 600px;
+    margin-left: 200px;
+}
+
+.heading {
+    padding-top: 150px;
 }
