@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-around py-8">
-      <img src={logo} alt="search" />
+      <img src={logo} alt="search" className="cursor-pointer" />
       <ul className="flex gap-10 cursor-pointer">
         <li onClick={() => styleLists("Home")} className={`${list === "Home" ? 'styling' : ''} transition`}>Home</li>
         <li onClick={() => styleLists("Menu")} className={`${list === "Menu" ? 'styling' : ''} transition`}>Menu</li>

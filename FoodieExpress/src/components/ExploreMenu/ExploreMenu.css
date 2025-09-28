@@ -1,0 +1,5 @@
+.selected {
+    border: 5px solid tomato;
+    padding: 3px;
+    border-radius: 60px;
+}
